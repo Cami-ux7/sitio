@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Bienvenido, ¡{{ username }}!</h2>
+        <img src="{{ url_for('static', filename='images/' + (profile_image if profile_image else 'Franscisco.Jimenez.jpg')) }}" 
+         alt="Foto de perfil" width="150" height="150">
+        <p>Has iniciado sesión exitosamente.</p>
+        <a href="/">Cerrar Sesión</a>
+    </div>
+</body>
+</html>
